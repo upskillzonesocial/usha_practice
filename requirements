@@ -1,0 +1,5 @@
+psycopg2
+sqlalchemy
+Flask
+flask_restful
+flask_marshMallow

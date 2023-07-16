@@ -1,0 +1,11 @@
+create table user_registration(
+username varchar unique,
+firstname varchar,
+lastname varchar,
+dob date,
+password varchar,
+confirm_password varchar,
+email_id varchar unique,
+phone_no bigint unique,
+address varchar,
+category varchar);
