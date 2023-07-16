@@ -96,6 +96,10 @@ def single_user():
 
 @app.route('/update-user-table', methods=['PATCH'])
 def updated_user_table():
+    '''
+    This table was updated
+    :return:
+    '''
     data = request.get_json()
     print(f"Data is : {data}")
     if not is_user_valid(data.get('fname') + data.get('lname')):
@@ -113,7 +117,7 @@ def updated_user_table():
 def delete_user():
     '''
     This function is updated
-    :return: 
+    :return:
     '''
     data = request.get_json()
     print(f"Data is : {data}")
