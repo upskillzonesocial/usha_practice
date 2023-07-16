@@ -111,6 +111,10 @@ def updated_user_table():
 
 @app.route('/delete-user', methods=['DELETE'])
 def delete_user():
+    '''
+    This function is updated
+    :return: 
+    '''
     data = request.get_json()
     print(f"Data is : {data}")
     if not is_user_valid(data.get('fname') + data.get('lname')):
